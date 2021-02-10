@@ -1,0 +1,38 @@
+<div class="row justify-content-center space-margin">
+
+	<div class="card">
+		<div class="card-body">
+			<h1>I'm looking for ..</h1>
+
+			<div class="form-group">
+				<div class="form-row">
+					<div class="col-md-12 mb-2">
+						<input type="text" class="form-control" name="jobdescription" [(ngModel)]="register.jobdescription" autocomplete="nope"placeholder="Enter a Job Description">&nbsp;
+						<button type="submit" (click)="onSearch()" class="btn btn-success px-4 mr-3">Search</button>&nbsp;
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="row space-margin">
+					<div class="col-md-6">
+						<div class="form-group">
+							<select class="form-control custom-select" placeholder="Select Your Location " [(ngModel)]="register.location">
+                  <option [ngValue]="''" disabled selected> Select your Location </option>              
+              </select>
+						</div>
+					</div>
+				</div>
+				<div class="row p-2 space-margin">
+					<label class="checkbox-inline"><input type="checkbox" value=""> Full Time </label>
+					<label class="checkbox-inline"><input type="checkbox" value=""> Part Time/Casual/Freelance </label>
+				</div>
+				<div class="row p-2 space-margin">
+					<div class="col-md-12 text-center">
+						<button type="submit" (click)="onSubmit()" class="btn btn-success px-4 mr-3">Register</button>&nbsp;
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
